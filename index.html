@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Files</title>
+	<title>Script Loader</title>
+	<script src="loader.js"></script>
 </head>
 <body>
-	
+	<script>
+
+		console.log('Before loading!!! >>>');
+		epamjs.loadScript('script_1.js');
+		epamjs.loadScript('script_2.js');
+		epamjs.loadScript('script_3.js');
+		console.log('<<< After loading!!!');
+
+	</script>
 </body>
 </html>
