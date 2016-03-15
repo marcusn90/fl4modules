@@ -1,5 +1,8 @@
-var logger = require('./logger');
-var getMsg = require('./http').getMsgByCode;
+import * as logger from 'logger.js';
+import getMsg from 'http.js';
 
-logger.logSuccess(getMsg(200));
-logger.logError(getMsg(404));
+export default function () {
+
+	logger.logSuccess(getMsg(200));
+	logger.logError(getMsg(404));
+}

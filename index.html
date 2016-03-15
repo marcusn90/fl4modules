@@ -2,7 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>CommonJS</title>
+	<title>ES6</title>
+	<script src="traceur.min.js"></script>
+	<script src="system.js"></script>
+	<script>
+		System.config({
+			baseURL: '/',
+			transpiler: 'traceur',
+			map: {
+				traceur: 'traceur.min.js'
+			}
+		});
+		System.import('main.js').then(function (m) {
+			m.default();
+		});
+	</script>
 	
 </head>
 <body>

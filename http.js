@@ -6,4 +6,4 @@ var httpCodes = {
 function getMsgByCode ( code ) {
 	return httpCodes[code];
 }
-module.exports.getMsgByCode = getMsgByCode;
+export default getMsgByCode;
