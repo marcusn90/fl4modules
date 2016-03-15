@@ -1,3 +1,5 @@
-var logger = require('./script_1');
+var logger = require('./logger');
+var getMsg = require('./http').getMsgByCode;
 
-logger.logError('Test Error Msg');
+logger.logSuccess(getMsg(200));
+logger.logError(getMsg(404));
